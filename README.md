@@ -31,6 +31,9 @@ Ecomerce Tecnoshop, es desarrollado para satisfacer la necesidades de una tienda
 
 Tecnologias Utilizadas: React, Redux, NodeJS, Express, Auth0, Sequelize, ProgresSQL y Cloudinary
 
+![image](https://user-images.githubusercontent.com/40220427/202299244-57ab8e2b-dc46-4e01-ab40-a8700ae784e8.png)
+
+
 Repo : https://github.com/anmarinur/E-commerce-PF
 
 Demo : https://e-commerce-pf-henna.vercel.app/
