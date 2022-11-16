@@ -26,7 +26,7 @@ BackEnd:
 
 
 ## My Proyects
-- Ecomerce - TecnoSHOP
+### Ecomerce - TecnoSHOP
 Ecomerce Tecnoshop, es desarrollado para satisfacer la necesidades de una tienda de tecnología, esta app tiene funciones como: catalogo de productos con filtrado por marca, categorías y ofertas, gestión de los productos y sus stocks. Adicionalmente cuenta con pasarela de pago( Mercado Pago ).
 
 Tecnologias Utilizadas: React, Redux, NodeJS, Express, Auth0, Sequelize, ProgresSQL y Cloudinary
