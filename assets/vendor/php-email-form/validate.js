@@ -1,81 +1,37 @@
-/**
-* PHP Email Form Validation - v3.5
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
 (function () {
   "use strict";
 
-  let forms = document.querySelectorAll('.php-email-form');
+  const URL = "https://formsubmit.co/b94b4dfb7ce168e62a7a2565193d2728";
 
-  forms.forEach( function(e) {
-    e.addEventListener('submit', function(event) {
-      event.preventDefault();
+  let forms = document.getElementById('form-contact');
+  let loading = document.querySelector(".loading");
+  let errorMessage = document.querySelector(".error-message")
+  let sentMessage = document.querySelector(".sent-message")
 
-      let thisForm = this;
+  console.log(loading);
 
-      let action = thisForm.getAttribute('action');
-      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
-      
-      if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!')
-        return;
+  console.log(forms);
+
+  console.log(URL);
+
+  forms.addEventListener("submit", async function (e) {
+    e.preventDefault()
+    try {
+      loading.classList.remove("visually-hidden");
+      const result = await fetch(URL, {
+        method: "POST",
+        body: new FormData(e.target)
+      })
+      console.log(result);
+      loading.classList.add("visually-hidden");
+      if (result.status === 200) {  
+        console.log(result.text()) 
+        sentMessage.classList.remove("visually-hidden");
       }
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
 
-      let formData = new FormData( thisForm );
+    } catch (error) {
+      console.log(error);
 
-      if ( recaptcha ) {
-        if(typeof grecaptcha !== "undefined" ) {
-          grecaptcha.ready(function() {
-            try {
-              grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
-              .then(token => {
-                formData.set('recaptcha-response', token);
-                php_email_form_submit(thisForm, action, formData);
-              })
-            } catch(error) {
-              displayError(thisForm, error)
-            }
-          });
-        } else {
-          displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
-        }
-      } else {
-        php_email_form_submit(thisForm, action, formData);
-      }
-    });
+    }
   });
-
-  function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
-      method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
-    })
-    .then(response => {
-      return response.text();
-    })
-    .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
-      } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
-      }
-    })
-    .catch((error) => {
-      displayError(thisForm, error);
-    });
-  }
-
-  function displayError(thisForm, error) {
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
-  }
-
 })();

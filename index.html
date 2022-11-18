@@ -21,7 +21,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
 
   <!-- =======================================================
   * Template Name: DevFolio - v4.9.1
@@ -310,7 +309,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form  method="POST"  role="form" id="form-contact">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -337,14 +336,19 @@
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
+                            <!-- <div class="loading">Loading</div> -->
+                            <div class="loading spinner-border visually-hidden" role="status">
+                              
+                            </div>
                             <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <div class="sent-message visually-hidden">Your message has been sent. Thank you!</div>
                           </div>
                           <div class="col-md-12 text-center">
                             <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                           </div>
                         </div>
+                        
+                        <input type="hidden" name="_captcha" value="false">
                       </form>
                     </div>
                   </div>
