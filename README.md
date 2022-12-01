@@ -71,8 +71,7 @@ Demo : https://e-commerce-pf-henna.vercel.app/
 
 
 ## My Stats
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=emuller1996)](https://github.com/emuller1996/github-readme-stats)
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=emuller1996&count_private=true)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=emuller1996)](https://github.com/emuller1996/github-readme-stats)
 
