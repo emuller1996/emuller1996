@@ -1,11 +1,12 @@
 
-
-![Logo](https://media-exp1.licdn.com/dms/image/C4E16AQFjPH2kGtoW4g/profile-displaybackgroundimage-shrink_350_1400/0/1668569452150?e=1674086400&v=beta&t=yOqnkdQ2TKVsrR14Fi6OwYzXdciI381bZ1UOZHSWH5A)
-
+![Logo](https://media.licdn.com/dms/image/C4E16AQFjPH2kGtoW4g/profile-displaybackgroundimage-shrink_350_1400/0/1668569452150?e=1686182400&v=beta&t=Ystmhr17_j3GJxC5yUnrxTX5tHM4X7VFxVAjdKLxwpw)
 
 
 
-## 🚀 Hola soy Estefano Muller 
+
+# Hi, I'm Estefano Muller  👋
+
+
 Hola a todos!, Me desempeño como desarrollador FullStack, graduado del bootcamp SoyHenry, a demas actualmente estoy estudiando Ing. en Sistemas en la Universidad del Pacifico. Soy una persona muy proactiva, respetuosa y cooperativa. Tengo la disposición y aprender otras tecnologías relacionadas en el desarrollo web para poder evolucionar profesionalmente.
 
 
@@ -65,8 +66,37 @@ Repo : https://github.com/anmarinur/E-commerce-PF
 
 Demo : https://e-commerce-pf-henna.vercel.app/
 
+
+
+- BarberMull - Barberia
+
+Un proyecto personal que he desarrollado para poder poner en práctica mis conocimientos y aprender otras tecnologías. Se trata de una pagina web de una Barberia, que cuenta con la funcionalidad de manejar la agendas de los barberos y gestionar los servicios que ofrecen los barberos. Tecnologias Utilizadas
+
+BackEnd: 
+- NodeJS
+- ExpressJS,
+- JWT
+- Moongoose (ODM)
+- Multer (Por implemetar).
+
+Front-end :
+- ReactJS
+- Redux
+- LocalStorage
+- ReactRouterV5
+Repositorios :
+
+- Front-end : https://github.com/emuller1996/barber-client-app
+
+- Back-end : https://github.com/emuller1996/backend-peluqueria
+
+- Demo : http://barberia-mull.s3-website-sa-east-1.amazonaws.com/
+
+![image](https://user-images.githubusercontent.com/40220427/230426862-d0c6eefc-17b4-43f6-a097-8f623e7c6aac.png)
+
+
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://emuller1996.github.io/emuller1996/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/estefano-m%C3%BCller-3a9b8b237/)
 
 
