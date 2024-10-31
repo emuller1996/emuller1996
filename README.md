@@ -102,6 +102,8 @@ Repositorios :
 
 ## My Stats
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=emuller1996&count_private=true)
 
 
+![emuller1996's Stats](https://github-readme-stats.vercel.app/api?username=emuller1996&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
+![emuller1996's Streak](https://github-readme-streak-stats.herokuapp.com/?user=emuller1996&theme=vue-dark&hide_border=true)
+![emuller1996's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=emuller1996&theme=vue-dark&show_icons=true&hide_border=true&layout=compact)
